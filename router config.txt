@@ -1,0 +1,64 @@
+//router 1
+
+interface fa0/0
+ip address 192.168.10.254 255.255.255.0
+no shut
+do wr
+exit
+
+interface se2/0
+ip address 192.168.60.1 255.255.255.0
+clock rate 64000
+no shut
+do wr
+exit
+
+
+interface se3/0
+ip address 192.168.40.1 255.255.255.0
+clock rate 64000
+no shut
+do wr
+exit
+
+//router 2
+
+
+interface fa0/0
+ip address 192.168.20.254 255.255.255.0
+no shut
+do wr
+exit
+
+interface se2/0
+ip address 192.168.40.1 255.255.255.0
+no shut
+do wr
+exit
+
+interface se3/0
+ip address 192.168.50.1 255.255.255.0
+clock rate 64000
+no shut
+do wr
+exit
+
+//router 3
+
+interface fa0/0
+ip address 192.168.30.254 255.255.255.0
+no shut
+do wr
+exit
+
+interface se2/0
+ip address 192.168.60.1 255.255.255.0
+no shut
+do wr
+exit
+
+interface se3/0
+ip address 192.168.50.1 255.255.255.0
+no shut
+do wr
+exit
